@@ -1,21 +1,25 @@
 extension = input('What is the name of your file? ')
+extension = extension.lower()
 
 match extension:
     case extension.endswith('gif'):
-        print('Your file is a .gif')
+        print('image/gif')
     case extension.endswith('jpg'):
-        print('Your file is a .jpg')
+        print('image/jpg')
     case extension.endswith('jpeg'):
-        print('Your file is a .jpeg')
+        print('image/jpeg')
     case extension.endswith('png'):
-        print('Your file is a .png')
+        print('image/png')
     case extension.endswith('pdf'):
-        print('Your file is a .pdf')
+        print('adobe/pdf')
     case extension.endswith('txt'):
-        print('Your file is a .txt')
+        print('text/txt')
     case extension.endswith('zip'):
-        print('Your file is a .zip')
+        print('compression/zip')
 
+if extension.endswith('gif'):
+    print('image/gif')
+elif extension.endswith('jpg')
 
 
 
